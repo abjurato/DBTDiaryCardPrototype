@@ -15,10 +15,16 @@ struct SettingsView: View {
     
     var body: some View {
         Form {
+            Section(footer: Text("Имя, которое будет на анкетах при экспорте в PDF")) {
+                Picker(selection: $selectedMode, label: Text("Пупкин Иван Васильевич")) {
+                    EmptyView()
+                }
+            }
+            
             Section {
                 Toggle("Напоминания", isOn: $notifications)
                 Picker(selection: $selectedMode, label: Text("9:00 PM, ежедневно")) {
-                    Text("")
+                    EmptyView()
                 }
             }
             

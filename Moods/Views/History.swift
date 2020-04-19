@@ -32,19 +32,15 @@ struct History: View {
         .init(id: "2", cards: cards2)
     ]
     
-    static let taskDateFormat: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .long
-        return formatter
-    }()
-    
+    var shower = Shower()
+ 
     var body: some View {
         ZStack {
             List {
                 ForEach(self.weeks) { week in
                     Section(header:
                         HStack {
-                            Text("\(week.cards.first!.date, formatter: Self.taskDateFormat) - \(week.cards.last!.date, formatter: Self.taskDateFormat)")
+                            Text("\(week.cards.first!.date, formatter: taskDateFormat) - \(week.cards.last!.date, formatter: taskDateFormat)")
                             
                             Spacer()
                             
@@ -54,7 +50,7 @@ struct History: View {
                         ForEach(week.cards) { card in
                             HStack {
                                 Image(systemName: "rectangle.and.paperclip")
-                                Text("\(card.date, formatter: Self.taskDateFormat)")
+                                Text("\(card.date, formatter: taskDateFormat)")
                             }
                         }
                     }
@@ -62,6 +58,7 @@ struct History: View {
             }
             
             FloatingButton()
+                .environmentObject(self.shower)
             
         }
     }

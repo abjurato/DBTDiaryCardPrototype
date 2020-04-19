@@ -25,5 +25,6 @@ struct Container: View {
 //        .foregroundColor(.white)
         .edgesIgnoringSafeArea(.all)
         .statusBar(hidden: true)
+        .navigationBarBackButtonHidden(true)
     }
 }

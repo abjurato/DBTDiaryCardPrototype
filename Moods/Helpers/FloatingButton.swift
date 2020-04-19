@@ -8,8 +8,12 @@
 
 import SwiftUI
 
+class Shower: ObservableObject {
+    @Published var show = false
+}
+
 struct FloatingButton: View {
-    @State private var showModal = false
+    @EnvironmentObject var shower: Shower
     
     var body: some View {
         VStack {
@@ -19,7 +23,7 @@ struct FloatingButton: View {
                 Spacer()
                 
                 Button(action: {
-                    self.showModal.toggle()
+                    self.shower.show.toggle()
                 }, label: {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
@@ -28,12 +32,9 @@ struct FloatingButton: View {
                         .shadow(color: .gray, radius: 2, x: 1, y: 1)
                         .padding()
                 })
-                    .sheet(isPresented: $showModal) { () -> AnyView in
-                        if Bool.random() {
-                            return AnyView( SevenStatesView() )
-                        } else {
-                            return AnyView( FiveStatesView() )
-                        }
+                .sheet(isPresented: $shower.show)
+                {
+                    StarQuizView().environmentObject(self.shower)
                 }
             }
         }

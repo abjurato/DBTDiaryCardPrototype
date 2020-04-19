@@ -9,22 +9,36 @@
 import SwiftUI
 
 struct BottomView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    var next: AnyView
+    
     var body: some View {
         ZStack{
             Text("3/25")
                 .font(.caption)
             
             HStack {
-                Text("Назад")
-                    .font(.footnote)
+                Button(action: { self.presentationMode.wrappedValue.dismiss() }) {
+                    Text("Назад")
+                        .font(.footnote)
+                }
                 
                 Spacer()
                 
-                Text("Следующий")
-                    .font(.body)
+                NavigationLink(destination: next) {
+                    Text("Следующий")
+                        .font(.body)
+                }
             }
+            .buttonStyle(PlainButtonStyle())
             .padding(5)
             .frame(maxWidth: .infinity, alignment: .center)
         }
+    }
+}
+
+struct BottomView_Previews: PreviewProvider {
+    static var previews: some View {
+        BottomView(next: AnyView(EmptyView()))
     }
 }

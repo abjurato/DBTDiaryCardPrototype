@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-var states = ["Очень низко", "Низко", "Нейтрально", "Слабо", "Сильно", "Очень сильно"]
+var states = ["совсем нет", "почти нет", "слабое", "средний уровень", "высокий уровень", "нет сил сдерживаться"]
 
 struct FiveStatesView: View {
     var body: some View {
@@ -24,7 +24,7 @@ struct FiveStatesView: View {
                 Spacer()
                     .frame(height: 50) // hardcoded shit
                 
-                BottomView()
+                BottomView(next: AnyView(SevenStatesView()))
             }
         ))
     }

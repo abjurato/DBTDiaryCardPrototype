@@ -21,6 +21,9 @@
 		AB3CBF37244B4E7C000D8979 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CBF36244B4E7C000D8979 /* Main.swift */; };
 		AB3CBF39244B4F35000D8979 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CBF38244B4F35000D8979 /* History.swift */; };
 		AB3CBF3B244B5B39000D8979 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CBF3A244B5B39000D8979 /* FloatingButton.swift */; };
+		AB3CBF3D244C1012000D8979 /* StarQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CBF3C244C1012000D8979 /* StarQuizView.swift */; };
+		AB3CBF3F244C13B1000D8979 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CBF3E244C13B1000D8979 /* DateFormatter.swift */; };
+		AB3CBF41244C1908000D8979 /* EndQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CBF40244C1908000D8979 /* EndQuizView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		AB3CBF36244B4E7C000D8979 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		AB3CBF38244B4F35000D8979 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		AB3CBF3A244B5B39000D8979 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
+		AB3CBF3C244C1012000D8979 /* StarQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarQuizView.swift; sourceTree = "<group>"; };
+		AB3CBF3E244C13B1000D8979 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		AB3CBF40244C1908000D8979 /* EndQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndQuizView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,10 @@
 		AB0C93B7244B3C8B00462749 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AB3CBF3C244C1012000D8979 /* StarQuizView.swift */,
 				AB0C93A5244B2B6900462749 /* FiveStatesView.swift */,
 				AB0C93B9244B3CAB00462749 /* SevenStatesView.swift */,
+				AB3CBF40244C1908000D8979 /* EndQuizView.swift */,
 				AB3CBF32244B41C7000D8979 /* SettingsView.swift */,
 				AB3CBF38244B4F35000D8979 /* History.swift */,
 				AB3CBF36244B4E7C000D8979 /* Main.swift */,
@@ -111,6 +119,7 @@
 				AB3CBF34244B425E000D8979 /* Container.swift */,
 				AB3CBF3A244B5B39000D8979 /* FloatingButton.swift */,
 				AB0C93BB244B3E5C00462749 /* BottomView.swift */,
+				AB3CBF3E244C13B1000D8979 /* DateFormatter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -187,12 +196,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB3CBF37244B4E7C000D8979 /* Main.swift in Sources */,
+				AB3CBF3D244C1012000D8979 /* StarQuizView.swift in Sources */,
 				AB0C93BA244B3CAB00462749 /* SevenStatesView.swift in Sources */,
+				AB3CBF41244C1908000D8979 /* EndQuizView.swift in Sources */,
 				AB3CBF3B244B5B39000D8979 /* FloatingButton.swift in Sources */,
 				AB0C93A2244B2B6900462749 /* AppDelegate.swift in Sources */,
 				AB3CBF33244B41C7000D8979 /* SettingsView.swift in Sources */,
 				AB3CBF39244B4F35000D8979 /* History.swift in Sources */,
 				AB0C93A4244B2B6900462749 /* SceneDelegate.swift in Sources */,
+				AB3CBF3F244C13B1000D8979 /* DateFormatter.swift in Sources */,
 				AB0C93BC244B3E5C00462749 /* BottomView.swift in Sources */,
 				AB3CBF35244B425E000D8979 /* Container.swift in Sources */,
 				AB0C93A6244B2B6900462749 /* FiveStatesView.swift in Sources */,

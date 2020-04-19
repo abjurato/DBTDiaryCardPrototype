@@ -34,7 +34,7 @@ struct SevenStatesView: View {
                 
                 Picket(title: "Стратегия изменения поведения", options: skills)
                 
-                BottomView()
+                BottomView(next: AnyView(EndQuizView()))
             }
         ))
     }

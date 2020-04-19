@@ -11,18 +11,22 @@ import SwiftUI
 struct EndQuizView: View {
     @EnvironmentObject var shower: Shower
 
+    @State var comment = "Введите ваши комментарии"
     @State var date = Date()
     @State var showDatePicker: Bool = false
     
     var body: some View {
         NavigationView {
             VStack(alignment: .center, spacing: 30) {
-                Spacer()
-                    .frame(height: 50) // hardcoded shit
+                TextView(text: $comment)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .frame(height: 200)
+                    .cornerRadius(5.0)
+                    .padding()
                 
-                Button(action: {
-                    self.shower.show.toggle()
-                }) {
+                Spacer()
+                
+                Button(action: { self.shower.show.toggle() }) {
                     Text("Сохранить")
                         .font(.title)
                 }
@@ -31,6 +35,9 @@ struct EndQuizView: View {
                 Button(action: { }) {
                     Image(systemName: "square.and.arrow.up")
                 }
+                
+                Spacer()
+                Spacer()
             }
         }
     }

@@ -24,6 +24,7 @@
 		AB3CBF3D244C1012000D8979 /* StarQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CBF3C244C1012000D8979 /* StarQuizView.swift */; };
 		AB3CBF3F244C13B1000D8979 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CBF3E244C13B1000D8979 /* DateFormatter.swift */; };
 		AB3CBF41244C1908000D8979 /* EndQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CBF40244C1908000D8979 /* EndQuizView.swift */; };
+		ABC0B9F7244C4BB3009CBC6B /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC0B9F6244C4BB3009CBC6B /* TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		AB3CBF3C244C1012000D8979 /* StarQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarQuizView.swift; sourceTree = "<group>"; };
 		AB3CBF3E244C13B1000D8979 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		AB3CBF40244C1908000D8979 /* EndQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndQuizView.swift; sourceTree = "<group>"; };
+		ABC0B9F6244C4BB3009CBC6B /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				AB3CBF3A244B5B39000D8979 /* FloatingButton.swift */,
 				AB0C93BB244B3E5C00462749 /* BottomView.swift */,
 				AB3CBF3E244C13B1000D8979 /* DateFormatter.swift */,
+				ABC0B9F6244C4BB3009CBC6B /* TextView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				AB3CBF33244B41C7000D8979 /* SettingsView.swift in Sources */,
 				AB3CBF39244B4F35000D8979 /* History.swift in Sources */,
 				AB0C93A4244B2B6900462749 /* SceneDelegate.swift in Sources */,
+				ABC0B9F7244C4BB3009CBC6B /* TextView.swift in Sources */,
 				AB3CBF3F244C13B1000D8979 /* DateFormatter.swift in Sources */,
 				AB0C93BC244B3E5C00462749 /* BottomView.swift in Sources */,
 				AB3CBF35244B425E000D8979 /* Container.swift in Sources */,

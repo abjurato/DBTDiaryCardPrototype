@@ -33,6 +33,7 @@ struct History: View {
     ]
     
     var shower = Shower()
+    @State var showDetails: Bool = false
  
     var body: some View {
         ZStack {
@@ -51,6 +52,12 @@ struct History: View {
                             HStack {
                                 Image(systemName: "rectangle.and.paperclip")
                                 Text("\(card.date, formatter: taskDateFormat)")
+                            }
+                            .onTapGesture {
+                                self.showDetails.toggle()
+                            }
+                            .sheet(isPresented: self.$showDetails) {
+                                Text("Here will be some kind of all-questions-in-one quiz with no editing")
                             }
                         }
                     }
